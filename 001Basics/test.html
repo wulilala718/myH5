@@ -2,44 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>唐诗一首</title>
+    <title>Title</title>
     <style type="text/css">
-        body{
-            background-image: url(./images/0.jpg);
-            background-size: 100% 100%;
-            height:100%;
-        }
-        html{
-            height:100%;
-        }
-        @keyframes myfirst {
-            0%{opacity: 0}
-            25%{opacity: 100%}
-            50%{opacity: 0}
-            100%{opacity: 0}
-        }
-        @keyframes mysecond {
-            0%{opacity: 0}
-            50%{opacity: 0}
-            75%{opacity: 100%}
-            100%{opacity: 0}
-        }
-        p{
-            font-size: 100px;
-            position: center;
+        html,boby,page{
+            height: 100%;
             width: 100%;
-            text-align: center;
+            margin: 0;
         }
-        #canghai{
-            animation: myfirst 7s infinite;
+        page{
+            font-size: 233px;
+            height: 100%;
+            position: absolute;
+            padding-top: 50%;
+            padding-left: 50%;
         }
-        #taotao{
-            animation: mysecond 7s infinite;
+        #c{
+            background-color: aquamarine;
+            animation: c 10s infinite;
+        }
+        #x{
+            background-color: red;
+            animation: x 10s infinite;
+        }
+        #q{
+            background-color: gold;
+            animation: q 10s infinite;
+        }
+        #d{
+            background-color: aqua;
+            animation: d 10s infinite;
+        }
+        @keyframes c {
+            0%{opacity: 0}
+            20%{opacity: 100}
+            40%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes x {
+            0%{opacity: 0}
+            20%{opacity: 0}
+            40%{opacity: 100}
+            60%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes q {
+            0%{opacity: 0}
+            40%{opacity: 0}
+            60%{opacity: 100}
+            80%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes d {
+            0%{opacity: 0}
+            60%{opacity: 0}
+            80%{opacity: 100}
+            100%{opacity: 0}
         }
     </style>
 </head>
 <body>
-<p id="canghai">沧海笑</p>
-<p id="taotao">滔滔两岸潮</p>
+<page id="c">春</page>
+<page id="x">夏</page>
+<page id="q">秋</page>
+<page id="d">冬</page>
 </body>
 </html>
