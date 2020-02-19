@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>春夏秋冬</title>
+    <title>秘密</title>
     <style type="text/css">
         html,boby,page{
             height: 100%;
@@ -14,23 +14,45 @@
             height: 100%;
             position: absolute;
             padding-top: 30%;
-            text-align: center;
+            padding-left: 30%;
         }
         #c{
-            background-color: aquamarine;
+            background-color: pink;
+            color: red;
             animation: c 10s infinite;
+            background-image: url("./images/玫瑰花4.jpg");
+            background-size: 100% 100%;
+            height: 100%;
         }
         #x{
             background-color: red;
+            color: red;
             animation: x 10s infinite;
+            background-image: url("./images/玫瑰花3.jpg");
+            background-size: 100% 100%;
+            height: 100%;
         }
         #q{
             background-color: gold;
+            color: red;
             animation: q 10s infinite;
+            background-image: url("./images/玫瑰花2.jpg");
+            background-size: 100% 100%;
+            height: 100%;
         }
         #d{
-            background-color: aqua;
+            background-color: palegoldenrod;
+            color: red;
             animation: d 10s infinite;
+            background-image: url("./images/玫瑰花1.jpg");
+            background-size: 100% 100%;
+            height: 100%;
+        }
+        #z{
+            font-size: 50px;
+            color: red;
+            display: block;
+            animation: z 10s infinite;
         }
         @keyframes c {
             0%{opacity: 0}
@@ -58,12 +80,37 @@
             80%{opacity: 100}
             100%{opacity: 0}
         }
+        @keyframes z {
+            0%{opacity: 0}
+            70%{opacity: 0}
+            80%{opacity: 100}
+            90%{opacity: 0}
+            100%{opacity: 0}
+        }
     </style>
 </head>
+<script>
+    function  audioAutoplay(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        },false);
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        },false);
+    }
+</script>>
 <body>
-<page id="c">春</page>
-<page id="x">夏</page>
-<page id="q">秋</page>
-<page id="d">冬</page>
+<body onload="audioAutoplay('aini');">
+<audio id="aini" src="wav/aini.m4a" preload="auto" autoplay="autoplay"></audio>
+</body>
+<page id="c">我</page>
+<page id="x">好</page>
+<page id="q">爱</page>
+<page id="d">
+    你
+    <span id="z">小宝贝蛋</span>
+</page>
 </body>
 </html>
